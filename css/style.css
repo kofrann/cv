@@ -1,0 +1,438 @@
+
+/* 
+Swlector  header
+declaracion {}
+proppiedad : background-color
+valor : green
+*/
+.header{
+  /* background-color: #1b262c; */
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+} 
+
+header figure{
+  margin: 0px 0px 0px 20px;
+  width: 120px;
+  height: 50px;
+}
+
+.header figure img{
+  width:  inherit;  
+  height: inherit;
+}
+
+
+.main{
+  height: 300px;  
+  /* background-image: url(../img/yo.PNG); */
+  /* background-size:  300px ; */
+/*   background-repeat: no-repeat;*/
+  /* background-position-x: right; */
+  background-color: #318fb5;
+  /* margin-bottom: 0PX; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+} 
+.main figure{
+  margin: 0px;
+  width: 250px;
+  height: auto;
+}
+
+.main img{
+  width: inherit;
+  height: inherit;
+
+}
+
+
+ ul{
+   list-style: none;   
+   padding: 0px;
+   margin: 0px;
+   display: flex;
+   height: inherit;
+ }
+ .menu{
+   height: inherit;
+ }
+
+ 
+ li{
+   height: inherit;
+ }
+
+
+
+
+
+
+/*
+Selectores de etiquetas:
+referencia a una etiqueta que sera manipúlada
+
+selectores de id o de clase 
+
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px;
+  background-color: #bbe1fa
+}
+
+h1, h2, h3, h4{
+  font-family: 'Fjalla One', sans-serif;
+  margin: 0px;
+}
+
+h1{
+  
+  line-height: 1.5em; /* espaciado*/ 
+  font-size: 35px;    /* tamaño */
+  font-weight: 100 ;    /* grosor  */
+  letter-spacing: -.2px; /*separacion entre caracteres */
+  text-transform: capitalize; /* pone la primera letras en altas */
+  margin-right: 20px;
+}
+
+header nav ul li a{
+  /* color: bisque; */
+  
+}
+
+
+
+
+
+
+.link {
+  color: darkkhaki;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  height: inherit;
+  align-items: center;
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+
+span{
+  color: blue;
+}
+
+.project-left{
+  width: 500px;
+}
+
+.project-title{
+  margin: 0px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.project-lenguaje{
+  margin-top: 10px;
+}
+.project-date{
+  margin-top: 10px;
+}
+.project-link{
+  margin-top: 10px;
+}
+.project-description{
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+
+.project-container-right{
+  width: 500px;
+}
+.header{
+  background-color: #0f3460;
+  display: flex;
+  justify-content: space-between;
+  /* height: 70; */
+  align-items: center;
+}
+
+.header figure{
+  margin: 0px 0px 0px 20px; /* el orden es asi arriba-derecha-abajo -izquierda*/
+  width: 400px;
+  height: auto;
+}
+
+.header figure img{
+  /* inherit es heredado  en este caso de header figure */
+  width: inherit;
+  height: inherit;
+  
+}
+.proyects{
+  padding: 0px 30px 10px 30px;
+  background-color: #bbe1fa; 
+  
+  
+}
+.project{
+  /* border-width: 5px; */
+  border-style: none;
+  /* border-color: #d54062; */
+  border-radius: 20px;
+  /*border-top-left-radius: 50px;*/
+  /*box-shadow: derecha abajo difuminado;*/
+  box-shadow: 0px 5px 5px black;
+  padding: 30px;
+  display: flex;
+  margin: 0px 0px 20px 0px ;
+  background-color: white; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* .proyects{
+  border-width: 5px;
+  border-style: solid;
+  border-color: #d54062;
+  border-radius: 20px;
+  /*border-top-left-radius: 50px;*/
+  /*box-shadow: derecha abajo difuminado;*/
+  /* box-shadow: 0px 10px 10px;
+  padding: 10px; */
+  /*display: flex;*/
+ /*  margin: 0px 20px ;
+ } */
+ 
+
+h2{
+  margin-left: 30px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  color: blue;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  /* background-color: #744bc525; */
+}
+
+
+.project-image{
+  width: inherit;
+  
+}
+
+.flexbox{
+  display: none;
+  flex-direction: row;  
+  flex-wrap: wrap;/*  alinea los objetos  mantenmiendo su ta,maño en el ancho de la pagina*/
+  /*justify-content: flex-end; /*  alinea hacia la derecha */ 
+ 
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: 2px solid  blue;
+  flex-shrink: 1; 
+  margin: 10px; 
+}
+
+
+.experiences{
+  padding: 0px 30px;
+  display: flex;  
+  flex-wrap: wrap;  
+  background-color: #bbe1fa;  
+  justify-content: space-around;
+  /* permite que los items s ealineen dependiendo
+  del ancho */
+  
+}
+
+.experience{
+  border: 1px  blue;
+  margin: 0px 20px 40px 0px;
+  width: 480px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: #f4fbff;
+  
+  
+}
+
+.experience-container-image{
+  margin: 0px;
+  width: inherit;
+  /* width: auto; */
+  height: 200px;
+  
+}
+
+.experience-image{
+ /*  width: auto; */
+ width: inherit;
+ height: inherit;
+ object-fit: cover;/* redimensiona  a  la imagen  correctamente */
+ 
+}
+
+.experience-down{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative; /*  trae al frente los item que esten dentro de la classe*/
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.experience-title{
+  margin: 0px;
+}
+
+.experience-description{
+  text-align: left;
+}
+
+.experience-down button{
+  border: 1px solid rosybrown;
+  padding: 5px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rosybrown ;
+}
+
+.experience-main-title{
+  margin-left: 30px;
+  margin: 0px ;
+  background-color: #bbe1fa;
+  padding-left: 30px;
+  
+ /*  padding: 0px 0px 10px 0px; */
+}
+
+.contact{
+  display: flex;
+  background-color: #318fb5;
+  justify-content: space-between;
+}
+
+.contact-form{
+  /* border: 1px solid blue; */
+  margin-left: 30px;
+  
+}
+
+.contact-form button{
+  display: block;
+  /*display blok hace que el elemte+
+   ocupe su ancho total y quede
+   en columnas o pase para abajo */
+ /*  border: 1px solid white; */
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  margin-top: 10px;  
+  border-radius: 5px;
+
+}
+
+
+
+.contact-form input{
+  border-color: gray;
+  border-style: solid;
+  padding: 5px 5px 5px 35px;
+  border-radius: 5px;
+  background-image: url(../img/mail.png);
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  /* con los bck..position ventramos  verticalmente (y)
+  y horizontalmente (x)*/
+  background-position-y: center;
+  background-position-x: 3px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.redes{
+  /* border: 1px solid red; */
+  display: flex;
+  
+  
+}
+.redes-link{
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+  
+  /* border: 1px solid blue; */
+}
+
+.redes-link.github{
+  background-image: url(../img/Octocat.png);
+  background-size: 50px 50px;
+}
+
+.redes-link.likedin{
+  background-image: url(../img/linkedin.png);
+  background-size: 50px 50px;
+}
+.redes-link.blogger{
+  background-image: url(../img/blogger.png);
+  background-size: 50px 50px;
+}
+.redes-link.twitter{
+  background-image: url(../img/twiter.png);
+  background-size: 50px 50px;
+}
+
+
+
+.footer{
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;/* separa los contenidos  en izq y derecha*/
+  align-items: center; /* centra el contenido verticalmente */
+  padding: 10px 60px;
+
+}
+
+
+.footer-details{
+  display: flex;
+  align-items: center;
+}
+
+.footer-details img{
+  width: 40px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+.wrapper{
+  width: 1000px;
+  /* border: 1px solid red; */
+  margin: 0px auto;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+
+
