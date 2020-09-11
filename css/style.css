@@ -7,6 +7,7 @@ valor : green
 */
 .header{
   /* background-color: #1b262c; */
+  
   display: flex;
   justify-content: space-between;
   height: 70px;
@@ -27,6 +28,7 @@ header figure{
 
 .main{
   height: 300px;  
+  
   /* background-image: url(../img/yo.PNG); */
   /* background-size:  300px ; */
 /*   background-repeat: no-repeat;*/
@@ -425,6 +427,7 @@ h2{
 
 .wrapper{
   width: 1000px;
+  /* width: 1000px; */
   /* border: 1px solid red; */
   margin: 0px auto;
   display: inherit;
@@ -434,5 +437,25 @@ h2{
   flex-wrap: inherit;
 }
 
+*{
+  box-sizing: border-box;
+}
 
+/* @media screen and (max-width:1024px){
+  body{
+    max-width:auto;
+  }
+  main{
+    max-width: auto;
+  }
+  .section{
+    max-width: auto;
+  }
+  .wrapper{
+    max-width: auto;
+  }
+  .header{
+    width: auto;
+  } */
+}
 
