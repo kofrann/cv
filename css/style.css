@@ -25,6 +25,12 @@ header figure{
   height: inherit;
 }
 
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px;
+  background-color: #bbe1fa
+}
+
 
 .main{
   height: 300px;  
@@ -38,6 +44,7 @@ header figure{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
  
 } 
 .main figure{
@@ -86,11 +93,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 
 
-body{
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 0px;
-  background-color: #bbe1fa
-}
+
 
 h1, h2, h3, h4{
   font-family: 'Fjalla One', sans-serif;
@@ -106,13 +109,6 @@ h1{
   text-transform: capitalize; /* pone la primera letras en altas */
   margin-right: 20px;
 }
-
-header nav ul li a{
-  /* color: bisque; */
-  
-}
-
-
 
 
 
@@ -164,8 +160,9 @@ span{
   background-color: #0f3460;
   display: flex;
   justify-content: space-between;
-  /* height: 70; */
+  height: 70;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header figure{
@@ -200,6 +197,7 @@ span{
   background-color: white; 
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 
@@ -328,6 +326,8 @@ h2{
   display: flex;
   background-color: #318fb5;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact-form{
@@ -410,6 +410,7 @@ h2{
   justify-content: space-between;/* separa los contenidos  en izq y derecha*/
   align-items: center; /* centra el contenido verticalmente */
   padding: 10px 60px;
+  flex-wrap: wrap;
 
 }
 
@@ -426,7 +427,7 @@ h2{
 }
 
 .wrapper{
-  width: 1000px;
+  max-width: 1000px;
   /* width: 1000px; */
   /* border: 1px solid red; */
   margin: 0px auto;
@@ -437,25 +438,40 @@ h2{
   flex-wrap: inherit;
 }
 
-*{
-  box-sizing: border-box;
+@media screen and (max-width:1024px){
+ 
 }
 
-/* @media screen and (max-width:1024px){
-  body{
-    max-width:auto;
-  }
-  main{
-    max-width: auto;
-  }
-  .section{
-    max-width: auto;
-  }
-  .wrapper{
-    max-width: auto;
-  }
-  .header{
-    width: auto;
-  } */
+@media screen and (max-width:767px){
+ .header{
+   height: auto;
+   display: block;
+ }
+ ul{
+   display: block;
+ }
+ .link{
+   justify-content: center;
+   margin: 0px 0px;
+   padding: 10px 0px;
+ }
+ .link:hover{
+   background-color: rgb(18, 2, 122);
+ }
+ .header figure{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px;
+ }
 }
 
+@media screen and (max-width:480px){
+
+  
+  }
+  @media screen and (max-width:320px){
+    
+
+   }
