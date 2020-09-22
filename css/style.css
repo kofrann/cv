@@ -6,7 +6,7 @@ proppiedad : background-color
 valor : green
 */
 .header{
-  /* background-color: #1b262c; */
+  background-color:#1d2d50;
   
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,7 @@ valor : green
 
 header figure{
   margin: 0px 0px 0px 20px;
-  width: 120px;
+  width: 100%;
   height: 50px;
 }
 
@@ -25,75 +25,22 @@ header figure{
   height: inherit;
 }
 
-body{
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 0px;
-  background-color: #bbe1fa
-}
-
-
-.main{
-  height: 300px;  
-  
-  /* background-image: url(../img/yo.PNG); */
-  /* background-size:  300px ; */
-/*   background-repeat: no-repeat;*/
-  /* background-position-x: right; */
-  background-color: #318fb5;
-  /* margin-bottom: 0PX; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
- 
-} 
-.main figure{
-  margin: 0px;
-  width: 250px;
-  height: auto;
-}
-
-.main img{
-  width: inherit;
+.menu{
   height: inherit;
+}
 
+ul{
+  list-style: none;   
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  height: inherit;
 }
 
 
- ul{
-   list-style: none;   
-   padding: 0px;
-   margin: 0px;
-   display: flex;
-   height: inherit;
- }
- .menu{
-   height: inherit;
- }
-
- 
- li{
-   height: inherit;
- }
-
-
-
-
-
-
-/*
-Selectores de etiquetas:
-referencia a una etiqueta que sera manipúlada
-
-selectores de id o de clase 
-
-font-family: 'Fjalla One', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-*/
-
-
-
-
+li{
+  height: inherit;
+}
 
 h1, h2, h3, h4{
   font-family: 'Fjalla One', sans-serif;
@@ -102,12 +49,13 @@ h1, h2, h3, h4{
 
 h1{
   
-  line-height: 1.5em; /* espaciado*/ 
+  line-height: 150%; /* espaciado*/ 
   font-size: 35px;    /* tamaño */
-  font-weight: 100 ;    /* grosor  */
+  font-weight: NORMAL ;    /* grosor  */
   letter-spacing: -.2px; /*separacion entre caracteres */
   text-transform: capitalize; /* pone la primera letras en altas */
   margin-right: 20px;
+  margin: 0PX;;
 }
 
 
@@ -124,17 +72,81 @@ h1{
   padding: 0px 10px;
 }
 
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px;
+  background-color: #bbe1fa;
+  font-size: 16px;;
+  }
+
+
+.main{
+  height: 300px;  
+  
+  /* background-image: url(../img/yo.PNG); */
+  /* background-size:  300px ; */
+/*   background-repeat: no-repeat;*/
+  /* background-position-x: right; */
+  background-color: #318fb5;
+  /* margin-bottom: 0PX; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 2%;
+} 
+.main figure{
+  margin: 0px;
+  width: auto;
+  height: inherit;
+}
+
+.main img{
+  width: inherit;
+  height: inherit;
+
+}
+
+/*
+Selectores de etiquetas:
+referencia a una etiqueta que sera manipúlada
+
+selectores de id o de clase 
+
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+
 span{
   color: blue;
 }
 
+.project{
+  /* border-width: 5px; */
+  border-style: none;
+  /* border-color: #d54062; */
+  border-radius: 20px;
+  /*border-top-left-radius: 50px;*/
+  /*box-shadow: derecha abajo difuminado;*/
+  box-shadow: 0px 5px 5px black;
+  padding: 4%;
+  display: flex;
+  margin: 0px 0px 20px 0px ;
+  background-color: white; 
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
 .project-left{
-  width: 500px;
+  width: 48%;
 }
 
 .project-title{
-  margin: 0px;
-  font-size: 25px;
+  margin: 0px;  
   margin-bottom: 10px;
 }
 
@@ -149,13 +161,12 @@ span{
 }
 .project-description{
   margin-top: 10px;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 
-.project-container-right{
-  width: 500px;
-}
+
+
 .header{
   background-color: #0f3460;
   display: flex;
@@ -167,38 +178,46 @@ span{
 
 .header figure{
   margin: 0px 0px 0px 20px; /* el orden es asi arriba-derecha-abajo -izquierda*/
-  width: 400px;
+  width: 380px;
   height: auto;
 }
 
 .header figure img{
   /* inherit es heredado  en este caso de header figure */
   width: inherit;
-  height: inherit;
+  height: auto;
   
 }
 .proyects{
-  padding: 0px 30px 10px 30px;
+  padding: 0px 1.5rem 10px 1.5rem;
   background-color: #bbe1fa; 
   
   
 }
 .project{
-  /* border-width: 5px; */
-  border-style: none;
-  /* border-color: #d54062; */
-  border-radius: 20px;
-  /*border-top-left-radius: 50px;*/
-  /*box-shadow: derecha abajo difuminado;*/
-  box-shadow: 0px 5px 5px black;
-  padding: 30px;
-  display: flex;
-  margin: 0px 0px 20px 0px ;
-  background-color: white; 
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: block;
+  font-size: 16px;
+ /*  padding: 4%;
+  margin:0px 0px 10px 0px; 
+  /* display: flex; */
+ /*  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap; */ 
 }
+
+.project-left{
+  width: auto;
+}
+
+.project-container-image{
+  width: auto;
+}
+
+
+.project-description{
+  font-size: 1.4em;
+}
+
 
 
 /* .proyects{
@@ -217,17 +236,18 @@ span{
 
 h2{
   margin-left: 30px;
-  padding: 10px 0px;
+  padding: 1.5rem 0px;
   text-transform: uppercase;
+  font-weight: bold;
   color: blue;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px;
+  font-size: 1.6rem;
   /* background-color: #744bc525; */
 }
 
 
 .project-image{
-  width: inherit;
+  width: 100%;
   
 }
 
@@ -439,7 +459,9 @@ h2{
 }
 
 @media screen and (max-width:1024px){
- 
+ .project-image{
+   justify-content: left;
+ }
 }
 
 @media screen and (max-width:767px){
@@ -455,6 +477,12 @@ h2{
    margin: 0px 0px;
    padding: 10px 0px;
  }
+
+ .project{
+   display: block;
+   font-size: 16px;
+   box-shadow: 0px 0px 8px black;
+ }
  .link:hover{
    background-color: rgb(18, 2, 122);
  }
@@ -465,13 +493,62 @@ h2{
   margin: 0px 0px 0px 0px;
   padding: 10px 0px;
  }
+ .project-left{
+   width: 100%;
+ }
+ .project-title{
+   font-size: 1.2em;
+   
+ }
+
+ .project-container-image{
+  width: 100%;
+  margin: 0px; 
 }
+
+.project-description, .project-link, .project-date, .project-language{
+  margin: 0.6rem 0;
+  font-size: 0.9REM;
+}
+.proyects h2{
+ font-size: 1,3rem;
+ padding: 1.3rem ;
+
+}
+section .main{
+  display: flex;
+}
+.main figure{
+  width: 90%;
+  height: auto;
+  padding: 0.5em;
+  display: blockf;
+}
+
+
 
 @media screen and (max-width:480px){
 
-  
+  .proyects{
+    font-weight: 1.3em;
+    padding: 0 1.2em 0.8em 1.2em;
+  }
+  .project{
+    font-size: 11px;
+    box-shadow: 0px 0px 6px black;
+    
+  }
+  .link{
+    padding: 0.4em 0;
+  }
   }
   @media screen and (max-width:320px){
-    
+    .project{
+      box-shadow: 0px 0px 4px black;
+      margin-bottom: 1.4em;
+      padding: 4%;
+    }
+    .link{
+      padding: 0.3em 0;
 
    }
